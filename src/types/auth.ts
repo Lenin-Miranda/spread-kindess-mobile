@@ -24,6 +24,7 @@ interface AuthContextType {
 type AuthStackParamList = {
   Login: undefined;
   Register: undefined;
+  Home: undefined;
 };
 
 export type { AuthState, AuthAction, AuthContextType, AuthStackParamList };

@@ -21,9 +21,9 @@ export default function LoginPage({ navigation }: Props) {
               Spread Kindness
             </Text>
 
-            <Text className="mt-2 px-6 font-semibold text-center text-xl leading-6 text-slate-400">
+            <Text className="mt-2 px-6 text-center text-lg leading-6 text-slate-400">
               Small acts,{"\n"}can make a{" "}
-              <Text className="font-semibold text-slate-400">Big Impact</Text>
+              <Text className=" text-slate-900">Big Impact</Text>
             </Text>
           </View>
 
@@ -75,7 +75,10 @@ export default function LoginPage({ navigation }: Props) {
         {/* Bottom Section */}
         <View>
           {/* Sign In Button */}
-          <TouchableOpacity className="rounded-2xl bg-[#FF6B6B] py-4 active:opacity-90">
+          <TouchableOpacity
+            className="rounded-2xl bg-[#FF6B6B] py-4 active:opacity-90"
+            onPress={() => navigation.navigate("Home")}
+          >
             <Text className="text-center text-base font-semibold text-white">
               Sign In
             </Text>
